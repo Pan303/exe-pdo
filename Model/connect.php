@@ -22,22 +22,18 @@ try {
 }
   $colcount = $stmt->fetchColumn(); 
     // on a un résultat
-    if($colcount > 0){
+    if($colcount > 0){  //IL FAUT QUE DANS LES SESSIONS SOIT ASSOCIé LES DROITS DE L'UTILISATEUR QUI S'EST CONNECTé
         /*EN COURS ------------
         $util = $connexion->query("
-  SELECT f.*, r.lenom, r.leprenom 
-  FROM film f 
-    INNER JOIN realisateur r 
-    ON r.id = f.realisateur_id
-  ORDER BY f.id DESC;
+  SELECT * FROM droit
   ");
-$affiche_tous = $recup_tous->fetchAll(PDO::FETCH_OBJ);
+$affiche_tous = $util->fetchAll(PDO::FETCH_OBJ);
         
         
          // création de session valide
          $_SESSION["id"] = session_id();
          $_SESSION['idutil'] = $util['id'];
-        $_SESSION['login'] = $util['lelogin'];
+        $_SESSION['login'] = $util['login'];
         $_SESSION['ecrit'] = $util['ecrit'];
         $_SESSION['modifie'] = $util['modifie'];
         $_SESSION['modifietous'] = $util['modifietous'];
