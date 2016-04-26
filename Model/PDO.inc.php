@@ -10,5 +10,6 @@ try {
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
-?>
+
+// attention si <?php >>>> header location marche plus car sa envoi des lignes vides
 

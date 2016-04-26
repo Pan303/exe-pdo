@@ -12,12 +12,11 @@ GROUP BY i.id
  * 
  * La j'ai jambon et fromage mais il me faut la pizza JambonFromage
  */
-
-foreach($_POST['ingred'] as $id)
-   
-{
+$id2=NULL;
+if(isset($_POST['ingred'])){
+foreach($_POST['ingred'] as $id){
 $id2.=$id;
-}
+}}
 
 // N'IRAS PAS POUR L'ADMINISTRATION OU BIEN AJOUTER MANUELLEMENT...
 if(empty($_POST)){

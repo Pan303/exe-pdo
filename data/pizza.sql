@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost:8889
--- Généré le :  Lun 25 Avril 2016 à 13:37
+-- Généré le :  Lun 25 Avril 2016 à 19:39
 -- Version du serveur :  5.5.42
 -- Version de PHP :  5.6.10
 
@@ -52,7 +52,7 @@ INSERT INTO `droit` (`id`, `ecrit`, `modif`, `supp`, `lintitule`) VALUES
 CREATE TABLE `ingredients` (
   `id` int(10) unsigned NOT NULL,
   `nom` varchar(45) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `ingredients`
@@ -121,6 +121,7 @@ INSERT INTO `pizza_has_ingredients` (`pizza_id`, `ingredients_id`) VALUES
 (12, 1),
 (14, 1),
 (15, 1),
+(16, 1),
 (2, 2),
 (6, 2),
 (7, 2),
@@ -136,6 +137,7 @@ INSERT INTO `pizza_has_ingredients` (`pizza_id`, `ingredients_id`) VALUES
 (13, 3),
 (14, 3),
 (15, 3),
+(16, 3),
 (4, 4),
 (8, 4),
 (9, 4),
@@ -222,7 +224,7 @@ ALTER TABLE `droit`
 -- AUTO_INCREMENT pour la table `ingredients`
 --
 ALTER TABLE `ingredients`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `pizza`
 --

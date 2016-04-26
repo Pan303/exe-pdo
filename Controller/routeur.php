@@ -21,6 +21,6 @@ if (empty($_GET)) {
 
 elseif (isset($_GET['connect'])) {
      require_once "Model/connect.php";
-     require_once "View/connect.inc.php";
+     require_once "View/connect.php";
      }
 

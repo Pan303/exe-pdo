@@ -1,0 +1,21 @@
+body {
+    background-color: forestgreen;
+    text-align: center;
+    padding-top: 10px;
+    background-image: url(http://restaurant-pizzeria-reims.com/css/img/ANDIAMO_commander-en-ligne.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
+
+
+form {
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+
+input[type=submit] {
+    background-color: #ff9933;
+    border-radius: 7px;
+    border-color: black;
+    font-size: large;
+}

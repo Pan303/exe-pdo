@@ -18,7 +18,7 @@ if (ini_get("session.use_cookies")) {
 
 session_destroy();
 
-//ou on peut utiliser un header location
-include './Model/redirectionJS.php';
-        
+
+header('Location: ./');
+
     
